@@ -1,2 +1,7 @@
 *.ipynb_checkpoints*
 *.pb
+sec1/MNIST_data
+*.DS_Store
+*events.*
+*.json
+intro/img

@@ -13,11 +13,11 @@ with tf.name_scope("cross_entropy") as scope:
     cross_entropy = -tf.reduce_sum(y_*tf.log(y) + (1-y_) * tf.log(1-y))
 
 with tf.name_scope("trainer") as scope:
-  optimizer = tf.train.GradientDescentOptimizer(0.1)
-  train = optimizer.minimize(cross_entropy)
+    optimizer = tf.train.GradientDescentOptimizer(0.1)
+    train = optimizer.minimize(cross_entropy)
 
 with tf.name_scope("initializer") as scope:
-  init = tf.initialize_all_variables()
+    init = tf.initialize_all_variables()
 
 tf.histogram_summary("weights", w)
 tf.histogram_summary("biases", b)
