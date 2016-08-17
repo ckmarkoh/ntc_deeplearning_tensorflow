@@ -1,12 +1,10 @@
 *.ipynb_checkpoints*
 *.pb
-sec1/MNIST_data
-sec2/MNIST_data
-sec3/MNIST_data
+*/MNIST_data
 *.DS_Store
 *events.*
 *.json
-*.ckpt
+*.ckpt*
 *.pyc
 *checkpoint
 intro/img
